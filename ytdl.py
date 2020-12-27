@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@MrErfan81 
-rojserbest
-/
-VoiceChatPyroBot
-3
-1719
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-VoiceChatPyroBot/ytdl.py /
-
-Roj Fix youtube_dl live video download error
-Latest commit 6679b1d 16 minutes ago
- History
- 1 contributor
-95 lines (79 sloc)  2.35 KB
-  
 import os
 
 if "downloads" not in os.listdir():
