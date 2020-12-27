@@ -13,15 +13,15 @@ async def clear_downloads(client, message):
                 os.remove("downloads/" + file)
             except:
                 pass
-        await message.reply_text("Removed all files in your downloads folder.")
+        await message.reply_text("تمامی فایل های دانلود شده در سرور پاک شدند.")
     except:
-        await message.reply_text("An error occured, your downloads folder might be empty.")
+        await message.reply_text("پاک نشد! شاید پوشه دانلودها خالیه!")
 
 __handlers__ = [
     [
         MessageHandler(
             clear_downloads,
-            filters.command("cleardownloads", "/")
+            filters.command("cdw", "/")
             & SUDO_FILTER
         )
     ]

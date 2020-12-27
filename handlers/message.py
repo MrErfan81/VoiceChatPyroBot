@@ -48,7 +48,7 @@ async def message(client, message):
                     client.send_message,
                     [
                         LOG_GROUP,
-                        "<b>الان در حال پخش است...</b>\n"
+                        "<b>هم اکنون داره در ویس چت چخش میشه...</b>\n"
                         "موزیک: <a href=\"{}\">{}</a>\n"
                         "درخواست شده توسط: <a href=\"tg://user?id={}\">{}</a>"
                     ]
