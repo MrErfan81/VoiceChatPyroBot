@@ -22,7 +22,7 @@ async def message(client, message):
     download(
         (
             message.reply_text,
-            ("موزیکی که دادی داره دانلود میشه😉",
+            ("موزیکی که دادی داره دانلود میشه😉",)
         ),
         (
             message.reply_text,
@@ -52,7 +52,7 @@ async def message(client, message):
                         "موزیک🎼: <a href=\"{}\">{}</a>\n"
                         "درخواست شده توسط😁: <a href=\"tg://user?id={}\">{}</a>"
                     ]
-            	]	if LOG_GROUP else None
+                ] if LOG_GROUP else None
             ]
         ],
         (
@@ -61,7 +61,9 @@ async def message(client, message):
         ),
         message.text,
     )
-	__handlers__ = [
+    
+
+__handlers__ = [
     [
         MessageHandler(
             message,
@@ -72,3 +74,5 @@ async def message(client, message):
         2
     ]
 ]
+
+wtf you fucked it up lol
