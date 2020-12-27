@@ -74,5 +74,3 @@ __handlers__ = [
         2
     ]
 ]
-
-wtf you fucked it up lol
