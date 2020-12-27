@@ -44,7 +44,7 @@ async def message(client, message):
                 None,
                 message.from_user.id,
                 message.from_user.first_name,
-                (
+                [
                    client.send_message,
                     [
                         LOG_GROUP,
@@ -52,7 +52,7 @@ async def message(client, message):
                         "موزیک🎼: <a href=\"{}\">{}</a>\n"
                         "درخواست شده توسط😁: <a href=\"tg://user?id={}\">{}</a>"
                     ]
-					if LOG_GROUP else None
+            	]	if LOG_GROUP else None
             ]
         ],
         (
