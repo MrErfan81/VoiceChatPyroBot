@@ -48,9 +48,9 @@ async def message(client, message):
                     client.send_message,
                     [
                         LOG_GROUP,
-                        "<b>NOW PLAYING</b>\n"
-                        "Title: <a href=\"{}\">{}</a>\n"
-                        "Requested By: <a href=\"tg://user?id={}\">{}</a>"
+                        "<b>الان در حال پخش است...</b>\n"
+                        "موزیک: <a href=\"{}\">{}</a>\n"
+                        "درخواست شده توسط: <a href=\"tg://user?id={}\">{}</a>"
                     ]
                 ] if LOG_GROUP else None
             ]
