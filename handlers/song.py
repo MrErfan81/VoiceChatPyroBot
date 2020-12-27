@@ -2,14 +2,13 @@ from pyrogram import filters
 from pyrogram.handlers import MessageHandler
 import player
 
-
 async def song(client, message):
     get = player.currently_playing()
     if get:
         await message.reply_text(
             """
-TITLE: <a href="{}">{}</a>
-REQUESTED BY: <a href="tg://user?id={}">{}</a>
+موزیک: <a href="{}">{}</a>
+درخواست شده توسط: <a href="tg://user?id={}">{}</a>
             """.format(
                 get["url"],
                 get["title"],
