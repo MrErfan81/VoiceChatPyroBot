@@ -13,7 +13,7 @@ async def clear_downloads(client, message):
                 os.remove("downloads/" + file)
             except:
                 pass
-        await message.reply_text("تمامی فایل های دانلود شده در سرور پاک شدند.")
+        await message.reply_text("تمامی فایل های دانلود شده در سرور با موفقیت پاک شدند.")
     except:
         await message.reply_text("پاک نشد! شاید پوشه دانلودها خالیه!")
 

@@ -11,22 +11,22 @@ async def message(client, message):
         return
 
     if not is_youtube(message.text):
-        await message.reply_text("This (link) is not valid.")
+        await message.reply_text("لینک داده شده مشکل داره دوباره بفرست")
         return
     
     if "list=" in message.text:
-        await message.reply_text("Send me a video link, not a playlist link.")
+        await message.reply_text("یه لینک موزیک ویدیو بفرست نه یک پلی لیست!")
         return
     
     await message.reply_text("Download scheduled.", quote=True)
     download(
         (
             message.reply_text,
-            ("Downloading...",)
+            ("موزیکی که دادی داره دانلود میشه...",)
         ),
         (
             message.reply_text,
-            (f"Downloaded and scheduled to play at position {player.q.qsize() + 1}.",)
+            (f"دانلود شد و آهنگ شما بعد {player.q.qsize() + 1} آهنگ پخش میشه.",)
         ),
         [
             player.play,
@@ -34,11 +34,11 @@ async def message(client, message):
                 None,
                 (
                     message.reply_text,
-                    ("Playing...",)
+                    ("<b>این موزیک داره توی ویس چت پخش میشه...<b>",)
                 ),
                 (
                     message.reply_text,
-                    ("Finished playing...",)
+                    ("</b>موزیک به اتمام رسید<...</b>",)
                 ),
                 None,
                 None,
