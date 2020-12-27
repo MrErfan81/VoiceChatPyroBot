@@ -61,3 +61,14 @@ async def message(client, message):
         ),
         message.text,
     )
+	__handlers__ = [
+    [
+        MessageHandler(
+            message,
+            filters.text
+            & filters.private
+            & ~ filters.regex(r"^x .+")
+        ),
+        2
+    ]
+]
