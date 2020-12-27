@@ -7,7 +7,7 @@ async def song(client, message):
     if get:
         await message.reply_text(
             """
-موزیک: <a href="{}">{}</a>
+موزیک در حال پخش: <a href="{}">{}</a>
 درخواست شده توسط: <a href="tg://user?id={}">{}</a>
             """.format(
                 get["url"],
@@ -19,7 +19,7 @@ async def song(client, message):
         )
     else:
         await message.reply_text(
-            "No song is currently playing."
+            "موزیکی پخش نمیشه که اطلاعاتش رو بدم"
         )
 
 __handlers__ = [

@@ -36,7 +36,7 @@ async def stream(client, message):
             )
 
             await message.reply_text(
-                "Streaming..."
+                "داره استریم میشه..."
             )
 
 __handlers__ = [

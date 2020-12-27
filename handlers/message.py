@@ -50,7 +50,7 @@ async def message(client, message):
                         LOG_GROUP,
                         "<b>هم اکنون داره در ویس چت پخش میشه🤩🎧</b>\n"
                         "موزیک🎼: <a href=\"{}\">{}</a>\n"
-                        "😁درخواست شده توسط: <a href=\"tg://user?id={}\">{}</a>"
+                        "درخواست شده توسط😁: <a href=\"tg://user?id={}\">{}</a>"
                     ]
                 ] if LOG_GROUP else None
             ]
